@@ -1,33 +1,28 @@
+import useRouteStore from "@/store/routeStore";
 import Map from "@components/map";
-import type { FeatureCollection } from "geojson";
 import "leaflet/dist/leaflet.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { GeoJSON, Marker, Popup } from "react-leaflet";
 
+const origin = { lat: 10.780146665063548, lng: 106.6993442321206 };
+const dest = { lat: 10.780723162863866, lng: 106.70317599927128 };
+
 const App = () => {
-  const [route, setRoute] = useState<FeatureCollection | null>(null);
+  const { route, getRoute } = useRouteStore();
 
   useEffect(() => {
-    const fetchRoute = async () => {
-      const res = await fetch(
-        "http://127.0.0.1:8000/route?origin_lat=10.780146665063548&origin_lng=106.6993442321206&dest_lat=10.780723162863866&dest_lng=106.70317599927128"
-      );
-      const data = await res.json();
-      setRoute(data);
-    };
-
-    fetchRoute();
-  }, []);
+    getRoute(origin, dest);
+  }, [getRoute]);
 
   return (
-    <Map>
+    <Map center={[10.780146665063548, 106.6993442321206]} zoomlevel={16}>
       {/* Origin */}
-      <Marker position={{ lat: 10.780146665063548, lng: 106.6993442321206 }}>
+      <Marker position={origin}>
         <Popup>High Land Coffee</Popup>
       </Marker>
 
       {/* Destination */}
-      <Marker position={{ lat: 10.780723162863866, lng: 106.70317599927128 }}>
+      <Marker position={dest}>
         <Popup>Hospital</Popup>
       </Marker>
 
