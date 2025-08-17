@@ -40,6 +40,17 @@ python server.py
 
 The server will start on `http://localhost:8000`
 
+Run by venv:
+
+```bash
+venv\Scripts\activate
+
+uvicorn server:app --reload
+
+```
+
+The server will start on `http://127.0.0.1:8000`
+
 ### API Endpoints
 
 - `GET /health` - Health check endpoint
