@@ -5,7 +5,7 @@ import networkx as nx
 import geojson
 
 
-file_path = "./data/map.graphml"
+file_path = "./data/map3.xml"
 
 app = FastAPI()
 graph = ox.load_graphml(file_path)

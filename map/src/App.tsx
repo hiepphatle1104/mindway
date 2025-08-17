@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MapController from "@/components/controller";
 import Search from "@/components/search";
 import "leaflet/dist/leaflet.css";
-import { Marker, Popup } from "react-leaflet";
+import { GeoJSON, Marker, Popup } from "react-leaflet";
 
 import { useState } from "react";
 
@@ -147,6 +147,8 @@ const App = () => {
             </Popup>
           </Marker>
         )}
+
+        {route && <GeoJSON data={route} />}
       </Map>
     </div>
   );
