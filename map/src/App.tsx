@@ -1,7 +1,8 @@
+import Map from "@components/map";
 import type { FeatureCollection } from "geojson";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useState } from "react";
-import { GeoJSON, MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { GeoJSON, Marker, Popup } from "react-leaflet";
 
 const App = () => {
   const [route, setRoute] = useState<FeatureCollection | null>(null);
@@ -19,16 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <MapContainer
-      center={[10.780146665063548, 106.6993442321206]}
-      zoom={16}
-      style={{ height: "100vh", width: "100%" }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
-      />
-
+    <Map>
       {/* Origin */}
       <Marker position={{ lat: 10.780146665063548, lng: 106.6993442321206 }}>
         <Popup>High Land Coffee</Popup>
@@ -41,7 +33,7 @@ const App = () => {
 
       {/* Route */}
       {route && <GeoJSON data={route} />}
-    </MapContainer>
+    </Map>
   );
 };
 
