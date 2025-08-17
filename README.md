@@ -14,6 +14,7 @@ FastAPI server that provides route planning functionality using OpenStreetMap da
 - Health check endpoint
 - CORS enabled for frontend integration
 - Automatic graph loading from GraphML files
+- GeoJSON response format for route visualization
 
 ### Setup
 
@@ -33,6 +34,7 @@ pip install -r requirements.txt
 3. Run the server:
 
 ```bash
+cd api
 python server.py
 ```
 
@@ -43,6 +45,7 @@ The server will start on `http://localhost:8000`
 - `GET /health` - Health check endpoint
 - `GET /route` - Calculate route between origin and destination coordinates
   - Query parameters: `origin_lat`, `origin_lng`, `dest_lat`, `dest_lng`
+  - Returns: GeoJSON FeatureCollection with route geometry
 
 ## 🗺️ Map Client (React/TypeScript)
 
@@ -57,6 +60,7 @@ Interactive map interface built with React, TypeScript, and Leaflet for visualiz
 - Route visualization with origin and destination markers
 - Modern UI with TailwindCSS and Radix UI components
 - State management with Zustand
+- Responsive design
 
 ### Setup
 
@@ -92,23 +96,32 @@ npm run build
 npm run preview
 ```
 
+### Linting
+
+```bash
+npm run lint
+```
+
 ## 🏗️ Project Structure
 
 ```
 mindway/
-├── server.py          # FastAPI server with route planning API
-├── gen.py            # Graph data generation script
-├── requirements.txt   # Python dependencies
-├── data/             # Graph data files (GraphML format)
-├── cache/            # OSM data cache directory
-├── map/              # React map client
+├── api/               # FastAPI backend server
+│   ├── server.py      # Main server with route planning API
+│   ├── gen.py         # Graph data generation script
+│   ├── dataset.py     # Dataset utilities
+│   ├── test.py        # Testing utilities
+│   ├── data/          # Graph data files (GraphML format)
+│   └── cache/         # OSM data cache directory
+├── map/               # React map client
 │   ├── src/
-│   │   ├── components/    # React components
+│   │   ├── components/    # React components (map, search, controller)
 │   │   ├── store/         # Zustand state management
-│   │   ├── lib/           # Utility functions
+│   │   ├── lib/           # Utility functions (HTTP client)
 │   │   └── App.tsx        # Main application component
 │   ├── package.json
 │   └── ...
+├── requirements.txt    # Python dependencies
 └── .venv/            # Python virtual environment
 ```
 
@@ -123,6 +136,7 @@ Python script for generating and preprocessing OpenStreetMap graph data for rout
 - Download OSM data for specific geographic areas
 - Generate road network graphs
 - Export data in GraphML format for the server
+- Automatic caching for improved performance
 
 ### Setup
 
@@ -132,7 +146,13 @@ Python script for generating and preprocessing OpenStreetMap graph data for rout
 pip install -r requirements.txt
 ```
 
-2. Edit `gen.py` to specify your target areas:
+2. Navigate to the api directory:
+
+```bash
+cd api
+```
+
+3. Edit `gen.py` to specify your target areas:
 
 ```python
 import osmnx as ox
@@ -145,7 +165,7 @@ G = ox.graph_from_place(places, network_type="drive")
 ox.io.save_graphml(G, filepath="./data/map.graphml")
 ```
 
-3. Run the script:
+4. Run the script:
 
 ```bash
 python gen.py
@@ -164,11 +184,27 @@ The generated graph will be saved to `./data/map.graphml`
 
 ## 🔧 Technologies Used
 
-- **Backend**: FastAPI, OSMnx, NetworkX, GeoJSON
-- **Frontend**: React 19, TypeScript, Leaflet, TailwindCSS, Radix UI
-- **State Management**: Zustand
-- **Data Processing**: OSMnx, NetworkX
-- **Build Tools**: Vite, ESLint
+### Backend
+
+- **FastAPI**: 0.116.1 - Modern, fast web framework
+- **OSMnx**: 2.0.6 - OpenStreetMap data processing
+- **NetworkX**: 3.5 - Graph algorithms and analysis
+- **GeoJSON**: 3.2.0 - Geographic data format
+- **Uvicorn**: 0.35.0 - ASGI server
+
+### Frontend
+
+- **React**: 19.1.1 - UI library
+- **TypeScript**: 5.8.3 - Type-safe JavaScript
+- **Leaflet**: 1.9.4 - Interactive maps
+- **TailwindCSS**: 4.1.12 - Utility-first CSS framework
+- **Radix UI**: 3.2.1 - Accessible UI components
+- **Zustand**: 5.0.7 - State management
+
+### Build Tools
+
+- **Vite**: 7.1.2 - Fast build tool
+- **ESLint**: 9.33.0 - Code linting
 
 ## 🚦 Getting Started
 
@@ -185,6 +221,7 @@ The generated graph will be saved to `./data/map.graphml`
    python -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
+   cd api
    python gen.py  # Generate graph data
    python server.py  # Start server
    ```
@@ -201,7 +238,23 @@ The generated graph will be saved to `./data/map.graphml`
 
 ## 📝 Notes
 
-- The server automatically loads the graph data on startup
+- The server automatically loads the graph data on startup from `./data/map3.graphml`
 - Make sure to generate graph data before starting the server
 - The application supports CORS for development on both localhost:5173 and localhost:3000
 - Graph data is cached in the `cache/` directory for faster subsequent runs
+- The server uses the `api/` directory structure for better organization
+- Route calculations return GeoJSON format for easy map visualization
+
+## 🔍 API Usage Example
+
+```bash
+# Get route between two points
+curl "http://localhost:8000/route?origin_lat=40.7128&origin_lng=-74.0060&dest_lat=40.7589&dest_lng=-73.9851"
+
+# Health check
+curl "http://localhost:8000/health"
+```
+
+## 🧪 Testing
+
+The project includes testing utilities in `api/test.py` for validating the route planning functionality.
