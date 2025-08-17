@@ -1,5 +1,7 @@
 import useRouteStore from "@/store/routeStore";
 import Map from "@components/map";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { TextField } from "@radix-ui/themes";
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 import { GeoJSON, Marker, Popup } from "react-leaflet";
@@ -15,10 +17,17 @@ const App = () => {
   }, [getRoute]);
 
   return (
-    <div className="relative bg-red-500">
-      <p className="absolute top-0 right-0 block text-xl z-10"> Hello</p>
+    <div className="relative">
+      <TextField.Root
+        placeholder="Search for place..."
+        className="w-96 absolute z-10 top-5 right-5"
+      >
+        <TextField.Slot>
+          <MagnifyingGlassIcon height="16" width="16" />
+        </TextField.Slot>
+      </TextField.Root>
 
-      <Map center={[10.780146665063548, 106.6993442321206]} zoomlevel={16}>
+      <Map center={[10.780146665063548, 106.6993442321206]} zoomlevel={14}>
         <Marker position={origin}>
           <Popup>High Land Coffee</Popup>
         </Marker>
