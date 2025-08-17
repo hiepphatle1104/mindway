@@ -15,20 +15,21 @@ const App = () => {
   }, [getRoute]);
 
   return (
-    <Map center={[10.780146665063548, 106.6993442321206]} zoomlevel={16}>
-      {/* Origin */}
-      <Marker position={origin}>
-        <Popup>High Land Coffee</Popup>
-      </Marker>
+    <div className="relative bg-red-500">
+      <p className="absolute top-0 right-0 block text-xl z-10"> Hello</p>
 
-      {/* Destination */}
-      <Marker position={dest}>
-        <Popup>Hospital</Popup>
-      </Marker>
+      <Map center={[10.780146665063548, 106.6993442321206]} zoomlevel={16}>
+        <Marker position={origin}>
+          <Popup>High Land Coffee</Popup>
+        </Marker>
 
-      {/* Route */}
-      {route && <GeoJSON data={route} />}
-    </Map>
+        <Marker position={dest}>
+          <Popup>Hospital</Popup>
+        </Marker>
+
+        {route && <GeoJSON data={route} />}
+      </Map>
+    </div>
   );
 };
 
