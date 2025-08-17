@@ -4,7 +4,8 @@ from datetime import datetime, timedelta
 
 # giả sử chỉ có 1 edge
 edges = [
-    {"u": 366369944, "v": 5463799657, "id": 32584226},
+    {"u": 366369944, "v": 5463799657, "osmid": 32584226},
+    {"u": 366367285, "v": 366416151, "osmid": 32580099}
 ]
 
 # thời gian start – end
@@ -33,7 +34,7 @@ for edge in edges:
         rows.append({
             "u": edge["u"],
             "v": edge["v"],
-            "id": edge["id"],
+            "id": edge["osmid"],
             "timestamp": t,
             "flow": max(flow, 0),
             "speed": max(speed, 0),
