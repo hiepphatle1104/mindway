@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 * {
-  @apply box-border p-0 m-0;
+  @apply box-border m-0;
 }
 
 #root {
