@@ -5,20 +5,11 @@ import Map from "@components/map";
 import MapController from "@/components/controller";
 import Search from "@/components/search";
 import "leaflet/dist/leaflet.css";
-import { useEffect } from "react";
 import { GeoJSON, Marker, Popup } from "react-leaflet";
 
-const origin = { lat: 10.780146665063548, lng: 106.6993442321206 };
-const dest = { lat: 10.780723162863866, lng: 106.70317599927128 };
-
 const App = () => {
-  const { route, getRoute } = useRouteStore();
-  const { selectedPlace, mapCenter } = useMapStore();
-
-  // Fetch route on mount
-  useEffect(() => {
-    getRoute(origin, dest);
-  }, [getRoute]);
+  const { route } = useRouteStore();
+  const { selectedPlace, mapCenter, origin, destination } = useMapStore();
 
   return (
     <div className="relative">
@@ -28,6 +19,26 @@ const App = () => {
         {selectedPlace && (
           <Marker position={[selectedPlace.lat, selectedPlace.lng]}>
             <Popup>{selectedPlace.display_name}</Popup>
+          </Marker>
+        )}
+        {origin && (
+          <Marker position={[origin.lat, origin.lng]}>
+            <Popup>
+              <div className="text-center">
+                <div className="font-bold text-blue-600">Origin</div>
+                <div>{origin.display_name}</div>
+              </div>
+            </Popup>
+          </Marker>
+        )}
+        {destination && (
+          <Marker position={[destination.lat, destination.lng]}>
+            <Popup>
+              <div className="text-center">
+                <div className="font-bold text-green-600">Destination</div>
+                <div>{destination.display_name}</div>
+              </div>
+            </Popup>
           </Marker>
         )}
         {route && <GeoJSON data={route} />}
