@@ -25,6 +25,7 @@ interface MapStore {
     } | null
   ) => void;
   setMapCenter: (center: [number, number]) => void;
+  clearAll: () => void;
 }
 
 const useMapStore = create<MapStore>((set) => ({
@@ -62,6 +63,12 @@ const useMapStore = create<MapStore>((set) => ({
         : null,
     }),
   setMapCenter: (center) => set({ mapCenter: center }),
+  clearAll: () =>
+    set({
+      selectedPlace: null,
+      origin: null,
+      destination: null,
+    }),
 }));
 
 export default useMapStore;

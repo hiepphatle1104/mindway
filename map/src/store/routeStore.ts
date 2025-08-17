@@ -8,6 +8,7 @@ interface RouteStore {
     origin: { lat: number; lng: number },
     dest: { lat: number; lng: number }
   ) => Promise<void>;
+  clearRoute: () => void;
 }
 
 const useRouteStore = create<RouteStore>((set) => ({
@@ -24,6 +25,7 @@ const useRouteStore = create<RouteStore>((set) => ({
       console.error("Error fetching route", err);
     }
   },
+  clearRoute: () => set({ route: null }),
 }));
 
 export default useRouteStore;

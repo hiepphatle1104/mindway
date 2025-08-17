@@ -20,8 +20,9 @@ import { useEffect, useState } from "react";
 
 const Search = () => {
   const { setQuery, searchPlaces, results } = useSearchStore();
-  const { setOrigin, setDestination, origin, destination } = useMapStore();
-  const { getRoute } = useRouteStore();
+  const { setOrigin, setDestination, origin, destination, clearAll } =
+    useMapStore();
+  const { getRoute, route, clearRoute } = useRouteStore();
   const [searchType, setSearchType] = useState<"origin" | "destination">(
     "origin"
   );
@@ -51,11 +52,18 @@ const Search = () => {
     }
   };
 
+  const handleCancel = () => {
+    clearRoute();
+    clearAll();
+  };
+
   const clearOrigin = () => {
     setOrigin(null);
+    clearRoute();
   };
   const clearDestination = () => {
     setDestination(null);
+    clearRoute();
   };
 
   return (
@@ -188,14 +196,21 @@ const Search = () => {
         </Box>
 
         {/* Direction Button */}
-        <Button
-          size="3"
-          disabled={!origin || !destination}
-          onClick={handleGetDirections}
-        >
-          <ArrowRightIcon width="16" height="16" />
-          Get Directions
-        </Button>
+        {!route ? (
+          <Button
+            size="3"
+            disabled={!origin || !destination}
+            onClick={handleGetDirections}
+          >
+            <ArrowRightIcon width="16" height="16" />
+            Get Directions
+          </Button>
+        ) : (
+          <Button size="3" variant="soft" color="red" onClick={handleCancel}>
+            <Cross1Icon width="16" height="16" />
+            Cancel Route
+          </Button>
+        )}
       </Flex>
     </Card>
   );
