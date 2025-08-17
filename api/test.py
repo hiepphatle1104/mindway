@@ -1,8 +1,7 @@
-import osmnx as ox
-import networkx as nx
-import matplotlib.pyplot as plt
 import geojson
-
+import matplotlib.pyplot as plt
+import networkx as nx
+import osmnx as ox
 
 # Save graph
 place = "Ho Chi Minh City, Vietnam"
@@ -43,8 +42,7 @@ route_coords = [(G.nodes[node]["x"], G.nodes[node]["y"]) for node in route]
 
 # Tạo GeoJSON Feature
 route_geojson = geojson.Feature(
-    geometry=geojson.LineString(route_coords),
-    properties={"name": "shortest_path"}
+    geometry=geojson.LineString(route_coords), properties={"name": "shortest_path"}
 )
 
 # Đóng gói thành FeatureCollection

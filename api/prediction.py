@@ -1,11 +1,10 @@
-import pandas as pd
-import numpy as np
 from datetime import datetime, timedelta
 
+import numpy as np
+import pandas as pd
+
 # giả sử chỉ có 1 edge
-edges = [
-    {"u": 366367285, "v": 366416151, "osmid": 32580099}
-]
+edges = [{"u": 366367285, "v": 366416151, "osmid": 32580099}]
 
 # thời gian start – end
 start = datetime(year=2025, month=1, day=1, hour=0, minute=0, second=0)
@@ -30,14 +29,16 @@ for edge in edges:
             flow = np.random.poisson(10)
             speed = np.random.normal(35, 5)
 
-        rows.append({
-            "u": edge["u"],
-            "v": edge["v"],
-            "id": edge["osmid"],
-            "timestamp": t,
-            "flow": max(flow, 0),
-            "speed": max(speed, 0),
-        })
+        rows.append(
+            {
+                "u": edge["u"],
+                "v": edge["v"],
+                "id": edge["osmid"],
+                "timestamp": t,
+                "flow": max(flow, 0),
+                "speed": max(speed, 0),
+            }
+        )
 
         t += timedelta(minutes=interval)
 

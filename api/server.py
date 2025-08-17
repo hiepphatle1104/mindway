@@ -1,9 +1,8 @@
+import geojson
+import networkx as nx
+import osmnx as ox
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-import osmnx as ox
-import networkx as nx
-import geojson
-
 
 file_path = "./data/map3.xml"
 
@@ -19,9 +18,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/health")
 async def root():
     return {"message": "Good Health"}
+
 
 @app.get("/route")
 async def get_route(
@@ -29,22 +30,24 @@ async def get_route(
     origin_lng: float = Query(..., description="Longitude of origin"),
     dest_lat: float = Query(..., description="Latitude of destination"),
     dest_lng: float = Query(..., description="Longitude of destination"),
-    speed_kmh: float = Query(30, description="Average speed km/h for estimated time")
+    speed_kmh: float = Query(30, description="Average speed km/h for estimated time"),
 ):
     # Find nearest nodes
     origin_node = ox.distance.nearest_nodes(graph, X=origin_lng, Y=origin_lat)
     dest_node = ox.distance.nearest_nodes(graph, X=dest_lng, Y=dest_lat)
 
     # Shortest path
-    route = nx.shortest_path(graph, origin_node, dest_node, weight="length", method="dijkstra")
+    route = nx.shortest_path(
+        graph, origin_node, dest_node, weight="length", method="dijkstra"
+    )
 
     # Get coordinates
     route_coords = [(graph.nodes[node]["x"], graph.nodes[node]["y"]) for node in route]
 
     # Calculate total length
-    total_length_m = nx.path_weight(graph, route, weight="length") 
+    total_length_m = nx.path_weight(graph, route, weight="length")
 
-    # Time 
+    # Time
     speed_m_per_s = speed_kmh * 1000 / 3600  # m/s
     estimated_time_s = total_length_m / speed_m_per_s
 
@@ -52,11 +55,11 @@ async def get_route(
     route_geojson = geojson.Feature(
         geometry=geojson.LineString(route_coords),
         properties={
-                "name": "shortest_path",
-                "length_m": total_length_m,
-                "time_s": estimated_time_s}
+            "name": "shortest_path",
+            "length_m": total_length_m,
+            "time_s": estimated_time_s,
+        },
     )
-
 
     route_geojson_fc = geojson.FeatureCollection([route_geojson])
 

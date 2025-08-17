@@ -2,10 +2,10 @@ import osmnx as ox
 
 # Places
 places = [
-  "Phuong Gia Dinh, Ho Chi Minh City, Viet Nam",
-  "Phuong Binh Loi Trung, Ho Chi Minh City, Viet Nam",
-  "Phuong Binh Thanh, Ho Chi Minh City, Viet Nam",
-  "Phuong Thanh My Tay, Ho Chi Minh City, Viet Nam"
+    "Phuong Gia Dinh, Ho Chi Minh City, Viet Nam",
+    "Phuong Binh Loi Trung, Ho Chi Minh City, Viet Nam",
+    "Phuong Binh Thanh, Ho Chi Minh City, Viet Nam",
+    "Phuong Thanh My Tay, Ho Chi Minh City, Viet Nam",
 ]
 path = "./data/map3.xml"
 

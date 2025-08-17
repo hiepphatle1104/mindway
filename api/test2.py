@@ -20,8 +20,7 @@ for feature in edges["features"]:
 
 # Lọc nodes có osmid nằm trong uv_ids
 filtered_nodes = [
-    node for node in nodes["features"]
-    if node["properties"].get("osmid") in uv_ids
+    node for node in nodes["features"] if node["properties"].get("osmid") in uv_ids
 ]
 
 # Xuất ra GeoJSON
@@ -29,7 +28,7 @@ filtered_nodes_geojson = {
     "type": "FeatureCollection",
     "name": "nodes_filtered",
     "crs": nodes["crs"],
-    "features": filtered_nodes
+    "features": filtered_nodes,
 }
 
 with open("./data/nodes_filtered.json", "w", encoding="utf-8") as f:
