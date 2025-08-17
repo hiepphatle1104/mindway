@@ -1,7 +1,7 @@
 // store/searchStore.ts
 import { create } from "zustand";
 
-interface Place {
+export interface Place {
   display_name: string;
   lat: string;
   lon: string;

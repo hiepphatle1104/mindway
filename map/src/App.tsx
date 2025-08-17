@@ -39,43 +39,49 @@ const App = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="w-96 absolute z-10 top-5 right-5">
-        <TextField.Root
-          placeholder="Search for place..."
-          radius="none"
-          className="rounded-t!"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          size={"3"}
-        >
-          <TextField.Slot>
-            <MagnifyingGlassIcon height="16" width="16" />
-          </TextField.Slot>
-        </TextField.Root>
-        {results.length > 0 && (
-          <ul className="bg-white rounded-b border-b border-l border-r border-neutral-400">
-            {results.map((r) => (
-              <li
-                key={`${r.lat}-${r.lon}`}
-                className="cursor-pointer hover:bg-neutral-100 w-full px-3! py-1! transition-colors ease-in-out select-none"
-                onClick={() => setSelectedPlace(r)}
-              >
-                {r.display_name}
-              </li>
-            ))}
-          </ul>
-        )}
+    <div className="relative h-screen w-full flex">
+      {/* Map and Search Bar */}
+      <div className="flex-1 relative">
+        <div className="w-96 absolute z-10 top-5 right-5">
+          <TextField.Root
+            placeholder="Search for place..."
+            radius="none"
+            className="rounded-t!"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            size={"3"}
+          >
+            <TextField.Slot>
+              <MagnifyingGlassIcon height="16" width="16" />
+            </TextField.Slot>
+          </TextField.Root>
+          {results.length > 0 && query && (
+            <ul className="bg-white rounded-b border-b border-l border-r border-neutral-400">
+              {results.map((r) => (
+                <li
+                  key={`${r.lat}-${r.lon}`}
+                  className="cursor-pointer hover:bg-neutral-100 w-full px-3! py-1! transition-colors ease-in-out select-none"
+                  onClick={() => {
+                    setSelectedPlace(r);
+                    setQuery("");
+                  }}
+                >
+                  {r.display_name}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        <Map center={mapCenter} zoomlevel={14}>
+          <MapController /> {/* Update map view based on store */}
+          {selectedPlace && (
+            <Marker position={[selectedPlace.lat, selectedPlace.lng]}>
+              <Popup>{selectedPlace.display_name}</Popup>
+            </Marker>
+          )}
+          {route && <GeoJSON data={route} />}
+        </Map>
       </div>
-      <Map center={mapCenter} zoomlevel={14}>
-        <MapController /> {/* Update map view based on store */}
-        {selectedPlace && (
-          <Marker position={[selectedPlace.lat, selectedPlace.lng]}>
-            <Popup>{selectedPlace.display_name}</Popup>
-          </Marker>
-        )}
-        {route && <GeoJSON data={route} />}
-      </Map>
     </div>
   );
 };
