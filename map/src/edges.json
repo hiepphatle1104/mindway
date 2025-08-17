@@ -1,0 +1,2246 @@
+{
+  "type": "FeatureCollection",
+  "name": "edges_filtered",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366386878,
+        "v": 366403574,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 59.734650655487954,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.716427,
+            10.8042501
+          ],
+          [
+            106.7158856,
+            10.8043261
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366386878,
+        "v": 366389946,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 202.44616852596658,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.716427,
+            10.8042501
+          ],
+          [
+            106.7173354,
+            10.8040846
+          ],
+          [
+            106.7177682,
+            10.8040027
+          ],
+          [
+            106.7180257,
+            10.8039533
+          ],
+          [
+            106.7182437,
+            10.803893
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366389946,
+        "v": 5778363369,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 54.266539561179854,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7182437,
+            10.803893
+          ],
+          [
+            106.7186849,
+            10.8036686
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366389946,
+        "v": 366386878,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 202.44616852596658,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7182437,
+            10.803893
+          ],
+          [
+            106.7180257,
+            10.8039533
+          ],
+          [
+            106.7177682,
+            10.8040027
+          ],
+          [
+            106.7173354,
+            10.8040846
+          ],
+          [
+            106.716427,
+            10.8042501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366401243,
+        "v": 1497313159,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 50.23055808908036,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7199216,
+            10.8030717
+          ],
+          [
+            106.7197706,
+            10.8031708
+          ],
+          [
+            106.7195158,
+            10.8032807
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366403574,
+        "v": 366386878,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 59.734650655487954,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7158856,
+            10.8043261
+          ],
+          [
+            106.716427,
+            10.8042501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366403574,
+        "v": 366430665,
+        "key": 0,
+        "osmid": "1227102771",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 63.83105210176417,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7158856,
+            10.8043261
+          ],
+          [
+            106.7154703,
+            10.8043848
+          ],
+          [
+            106.7153102,
+            10.8044233
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366430665,
+        "v": 366448637,
+        "key": 0,
+        "osmid": "32580171",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 51.09952036328858,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153102,
+            10.8044233
+          ],
+          [
+            106.7153952,
+            10.8048752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366430665,
+        "v": 366450105,
+        "key": 0,
+        "osmid": "1227102771",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 74.27600791816158,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153102,
+            10.8044233
+          ],
+          [
+            106.7146462,
+            10.8045675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366430665,
+        "v": 366403574,
+        "key": 0,
+        "osmid": "1227102771",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 63.83105210176417,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153102,
+            10.8044233
+          ],
+          [
+            106.7154703,
+            10.8043848
+          ],
+          [
+            106.7158856,
+            10.8043261
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366448637,
+        "v": 2030638523,
+        "key": 0,
+        "osmid": "32580171",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 60.712279184654626,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153952,
+            10.8048752
+          ],
+          [
+            106.7154514,
+            10.8054184
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366448637,
+        "v": 366430665,
+        "key": 0,
+        "osmid": "32580171",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 51.09952036328858,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153952,
+            10.8048752
+          ],
+          [
+            106.7153102,
+            10.8044233
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366448637,
+        "v": 2030638723,
+        "key": 0,
+        "osmid": "192512435",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 26.251675572745636,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7153952,
+            10.8048752
+          ],
+          [
+            106.71516,
+            10.8049238
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366450105,
+        "v": 366430665,
+        "key": 0,
+        "osmid": "1227102771",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 74.27600791816158,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7146462,
+            10.8045675
+          ],
+          [
+            106.7153102,
+            10.8044233
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366450105,
+        "v": 5735274031,
+        "key": 0,
+        "osmid": "1379219466",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 36.410656752449015,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7146462,
+            10.8045675
+          ],
+          [
+            106.7143196,
+            10.8046331
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366450105,
+        "v": 2030638665,
+        "key": 0,
+        "osmid": "1379219467",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 51.176202971575144,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7146462,
+            10.8045675
+          ],
+          [
+            106.7147482,
+            10.8050167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 366474902,
+        "v": 2030638846,
+        "key": 0,
+        "osmid": "1379219464",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 56.720453294478425,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7149902,
+            10.8060831
+          ],
+          [
+            106.7148844,
+            10.8055837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313145,
+        "v": 1497313146,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 36.762389561764316,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7189353,
+            10.8023347
+          ],
+          [
+            106.7191314,
+            10.8026034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313145,
+        "v": 5779433087,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 39.6372469448102,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7189353,
+            10.8023347
+          ],
+          [
+            106.7187547,
+            10.8020999
+          ],
+          [
+            106.7187172,
+            10.8020498
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313146,
+        "v": 1497313150,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 38.47863862565037,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7191314,
+            10.8026034
+          ],
+          [
+            106.7193233,
+            10.8028936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313146,
+        "v": 1497313145,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 36.762389561764316,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7191314,
+            10.8026034
+          ],
+          [
+            106.7189353,
+            10.8023347
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313150,
+        "v": 1497313159,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 47.904413285500404,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7193233,
+            10.8028936
+          ],
+          [
+            106.7195158,
+            10.8032807
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313150,
+        "v": 1497313146,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 38.47863862565037,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7193233,
+            10.8028936
+          ],
+          [
+            106.7191314,
+            10.8026034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313159,
+        "v": 5778363358,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 30.23581187060167,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195158,
+            10.8032807
+          ],
+          [
+            106.719265,
+            10.8033958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313159,
+        "v": 1497313150,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 47.904413285500404,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195158,
+            10.8032807
+          ],
+          [
+            106.7193233,
+            10.8028936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 1497313159,
+        "v": 366401243,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 50.23055808908036,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195158,
+            10.8032807
+          ],
+          [
+            106.7197706,
+            10.8031708
+          ],
+          [
+            106.7199216,
+            10.8030717
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638523,
+        "v": 366448637,
+        "key": 0,
+        "osmid": "32580171",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 60.712279184654626,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7154514,
+            10.8054184
+          ],
+          [
+            106.7153952,
+            10.8048752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638665,
+        "v": 2030638723,
+        "key": 0,
+        "osmid": "192512435",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 46.14931000199357,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7147482,
+            10.8050167
+          ],
+          [
+            106.71516,
+            10.8049238
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638665,
+        "v": 2030638846,
+        "key": 0,
+        "osmid": "1379219464",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 64.77888792564028,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7147482,
+            10.8050167
+          ],
+          [
+            106.7148844,
+            10.8055837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638665,
+        "v": 2030639055,
+        "key": 0,
+        "osmid": "1379219465",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94/9 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 55.00415216414352,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7147482,
+            10.8050167
+          ],
+          [
+            106.7142579,
+            10.8051296
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638665,
+        "v": 366450105,
+        "key": 0,
+        "osmid": "1379219467",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 51.176202971575144,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7147482,
+            10.8050167
+          ],
+          [
+            106.7146462,
+            10.8045675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638723,
+        "v": 2030638665,
+        "key": 0,
+        "osmid": "192512435",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 46.14931000199357,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71516,
+            10.8049238
+          ],
+          [
+            106.7147482,
+            10.8050167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638723,
+        "v": 366448637,
+        "key": 0,
+        "osmid": "192512435",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 64 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 26.251675572745636,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.71516,
+            10.8049238
+          ],
+          [
+            106.7153952,
+            10.8048752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638846,
+        "v": 2030638665,
+        "key": 0,
+        "osmid": "1379219464",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 64.77888792564028,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7148844,
+            10.8055837
+          ],
+          [
+            106.7147482,
+            10.8050167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030638846,
+        "v": 366474902,
+        "key": 0,
+        "osmid": "1379219464",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 56.720453294478425,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7148844,
+            10.8055837
+          ],
+          [
+            106.7149902,
+            10.8060831
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 2030639055,
+        "v": 2030638665,
+        "key": 0,
+        "osmid": "1379219465",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 94/9 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 55.00415216414352,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7142579,
+            10.8051296
+          ],
+          [
+            106.7147482,
+            10.8050167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5735274031,
+        "v": 366450105,
+        "key": 0,
+        "osmid": "1379219466",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 36.410656752449015,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7143196,
+            10.8046331
+          ],
+          [
+            106.7146462,
+            10.8045675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778236295,
+        "v": 5778363366,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 32.13819559341062,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7198516,
+            10.8044446
+          ],
+          [
+            106.7196878,
+            10.8042045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778236295,
+        "v": 5778363368,
+        "key": 0,
+        "osmid": "610102955",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/15 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 72.86500726783146,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7198516,
+            10.8044446
+          ],
+          [
+            106.7192205,
+            10.804657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363358,
+        "v": 1497313159,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 30.23581187060167,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.719265,
+            10.8033958
+          ],
+          [
+            106.7195158,
+            10.8032807
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363358,
+        "v": 5778363369,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 70.247888487362,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.719265,
+            10.8033958
+          ],
+          [
+            106.7186849,
+            10.8036686
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363358,
+        "v": 5778363359,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 43.89402922720022,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.719265,
+            10.8033958
+          ],
+          [
+            106.7194034,
+            10.8037664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363359,
+        "v": 5778363364,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 20.93144280443055,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7194034,
+            10.8037664
+          ],
+          [
+            106.7195032,
+            10.8039271
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363359,
+        "v": 5778363358,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 43.89402922720022,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7194034,
+            10.8037664
+          ],
+          [
+            106.719265,
+            10.8033958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363359,
+        "v": 5778363361,
+        "key": 0,
+        "osmid": "610102950",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/1 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 45.49237923999405,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7194034,
+            10.8037664
+          ],
+          [
+            106.7190091,
+            10.8038982
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363359,
+        "v": 5778363362,
+        "key": 0,
+        "osmid": "610102951",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/2 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 57.88569844495464,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7194034,
+            10.8037664
+          ],
+          [
+            106.719894,
+            10.8035695
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363361,
+        "v": 5778363359,
+        "key": 0,
+        "osmid": "610102950",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/1 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 45.49237923999405,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7190091,
+            10.8038982
+          ],
+          [
+            106.7194034,
+            10.8037664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363362,
+        "v": 5778363359,
+        "key": 0,
+        "osmid": "610102951",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/2 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 57.88569844495464,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.719894,
+            10.8035695
+          ],
+          [
+            106.7194034,
+            10.8037664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363363,
+        "v": 5778363364,
+        "key": 0,
+        "osmid": "610102952",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/5 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 66.61639600415621,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7189237,
+            10.8041139
+          ],
+          [
+            106.7195032,
+            10.8039271
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363364,
+        "v": 5778363359,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 20.93144280443055,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195032,
+            10.8039271
+          ],
+          [
+            106.7194034,
+            10.8037664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363364,
+        "v": 5778363363,
+        "key": 0,
+        "osmid": "610102952",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/5 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 66.61639600415621,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195032,
+            10.8039271
+          ],
+          [
+            106.7189237,
+            10.8041139
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363364,
+        "v": 5778363366,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 36.85694325605343,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195032,
+            10.8039271
+          ],
+          [
+            106.7195498,
+            10.804002
+          ],
+          [
+            106.7196878,
+            10.8042045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363364,
+        "v": 11232925411,
+        "key": 0,
+        "osmid": "610102953",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/6 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 75.68167039891478,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7195032,
+            10.8039271
+          ],
+          [
+            106.7199195,
+            10.8037742
+          ],
+          [
+            106.7199771,
+            10.8035368
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363366,
+        "v": 5778236295,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 32.13819559341062,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7196878,
+            10.8042045
+          ],
+          [
+            106.7198516,
+            10.8044446
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363366,
+        "v": 5778363367,
+        "key": 0,
+        "osmid": "610102954",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/11 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 72.75914976933713,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7196878,
+            10.8042045
+          ],
+          [
+            106.7190579,
+            10.8044174
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363366,
+        "v": 5778363364,
+        "key": 0,
+        "osmid": "610102949",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 36.85694325605343,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7196878,
+            10.8042045
+          ],
+          [
+            106.7195498,
+            10.804002
+          ],
+          [
+            106.7195032,
+            10.8039271
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363367,
+        "v": 5778363366,
+        "key": 0,
+        "osmid": "610102954",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/11 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 72.75914976933713,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7190579,
+            10.8044174
+          ],
+          [
+            106.7196878,
+            10.8042045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363368,
+        "v": 5778236295,
+        "key": 0,
+        "osmid": "610102955",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/15 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 72.86500726783146,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7192205,
+            10.804657
+          ],
+          [
+            106.7198516,
+            10.8044446
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363369,
+        "v": 5778363358,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 70.247888487362,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7186849,
+            10.8036686
+          ],
+          [
+            106.719265,
+            10.8033958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5778363369,
+        "v": 366389946,
+        "key": 0,
+        "osmid": "32576073",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 54.266539561179854,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7186849,
+            10.8036686
+          ],
+          [
+            106.7182437,
+            10.803893
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 5779433087,
+        "v": 1497313145,
+        "key": 0,
+        "osmid": "610240358",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 1 Võ Oanh",
+        "oneway": false,
+        "reversed": "False",
+        "length": 39.6372469448102,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7187172,
+            10.8020498
+          ],
+          [
+            106.7187547,
+            10.8020999
+          ],
+          [
+            106.7189353,
+            10.8023347
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "u": 11232925411,
+        "v": 5778363364,
+        "key": 0,
+        "osmid": "610102953",
+        "highway": "residential",
+        "lanes": null,
+        "maxspeed": null,
+        "name": "Hẻm 24/6 Võ Oanh",
+        "oneway": false,
+        "reversed": "True",
+        "length": 75.68167039891478,
+        "bridge": null,
+        "access": null,
+        "ref": null,
+        "tunnel": null,
+        "width": null,
+        "junction": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.7199771,
+            10.8035368
+          ],
+          [
+            106.7199195,
+            10.8037742
+          ],
+          [
+            106.7195032,
+            10.8039271
+          ]
+        ]
+      }
+    }
+  ]
+}

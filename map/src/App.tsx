@@ -4,8 +4,14 @@ import Map from "@components/map";
 
 import MapController from "@/components/controller";
 import Search from "@/components/search";
+import type { FeatureCollection } from "geojson";
 import "leaflet/dist/leaflet.css";
 import { GeoJSON, Marker, Popup } from "react-leaflet";
+import edgeData from "./edges.json";
+import nodeData from "./nodes.json";
+
+const edges = edgeData as FeatureCollection;
+const nodes = nodeData as FeatureCollection;
 
 const App = () => {
   const { route } = useRouteStore();
@@ -41,7 +47,8 @@ const App = () => {
             </Popup>
           </Marker>
         )}
-        {route && <GeoJSON data={route} />}
+        {edges && <GeoJSON data={edges} />}
+        {nodes && <GeoJSON data={nodes} />}
       </Map>
     </div>
   );
