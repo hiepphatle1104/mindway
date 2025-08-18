@@ -3,6 +3,7 @@ import networkx as nx
 import osmnx as ox
 from fastapi import FastAPI, Query, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 
 class ClientManager:
@@ -12,15 +13,17 @@ class ClientManager:
     async def connect(self, ws: WebSocket):
         await ws.accept()
         self.clients.append(ws)
+        print("Client is connected!")
 
     def disconnect(self, ws: WebSocket):
         self.clients.remove(ws)
+        print("Client has been disconnected!")
 
-    async def broadcast(self, message: str):
+    async def broadcast(self, data: dict):
         disconnected = []
         for ws in self.clients:
             try:
-                await ws.send_text(message)
+                await ws.send_json(data)
             except WebSocketDisconnect:
                 disconnected.append(ws)
         # cleanup client bị rớt
@@ -111,7 +114,63 @@ async def websocket_endpoint(ws: WebSocket):
     await manager.connect(ws)
     try:
         while True:
-            await ws.receive_text()
+            data = await ws.receive_json()
+
+            # Handle route request
+            if data.get("type") == "route_request":
+                origin_lat = data.get("origin_lat")
+                origin_lng = data.get("origin_lng")
+                dest_lat = data.get("dest_lat")
+                dest_lng = data.get("dest_lng")
+                avg_speed = data.get("avg_speed", 30)
+
+                if all([origin_lat, origin_lng, dest_lat, dest_lng]):
+                    origin = Location(lat=origin_lat, lng=origin_lng)
+                    dest = Location(lat=dest_lat, lng=dest_lng)
+                    route_data = street_network.get_direction(origin, dest, avg_speed)
+
+                    # Send route data to the requesting client
+                    await ws.send_json({"type": "route_response", "data": route_data})
+
+                    # Broadcast route update to all clients
+                    await manager.broadcast(
+                        {
+                            "type": "route_update",
+                            "message": "New route calculated",
+                            "timestamp": data.get("timestamp"),
+                        }
+                    )
+
+            # Handle other message types if needed
+            elif data.get("type") == "ping":
+                await ws.send_json({"type": "pong"})
+
     except WebSocketDisconnect:
         manager.disconnect(ws)
+    except Exception as e:
+        print(f"WebSocket error: {e}")
         manager.disconnect(ws)
+
+
+@app.post("/broadcast")
+async def broadcast(data: dict):
+    await manager.broadcast(data)
+    return JSONResponse({"status": "sent", "data": data})
+
+
+@app.post("/test-route-update")
+async def test_route_update():
+    """Test endpoint to simulate a route update broadcast"""
+    await manager.broadcast(
+        {
+            "type": "route_update",
+            "message": "Test route update broadcast",
+            "timestamp": "2024-01-01T00:00:00Z",
+        }
+    )
+    return JSONResponse(
+        {
+            "status": "broadcast_sent",
+            "message": "Route update broadcast sent to all clients",
+        }
+    )

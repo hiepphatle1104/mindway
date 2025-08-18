@@ -10,6 +10,7 @@ interface RouteStore {
     origin: { lat: number; lng: number },
     dest: { lat: number; lng: number }
   ) => Promise<void>;
+  updateRouteFromWebSocket: (routeData: FeatureCollection) => void;
   clearRoute: () => void;
 }
 
@@ -36,6 +37,14 @@ const useRouteStore = create<RouteStore>((set) => ({
     } catch (err) {
       console.error("Error fetching route", err);
     }
+  },
+  updateRouteFromWebSocket: (routeData) => {
+    const props = routeData.features[0]?.properties || {};
+    set({
+      route: routeData,
+      length: props.length_m ? props.length_m / 1000 : null,
+      time: props.time_s ? props.time_s / 60 : null,
+    });
   },
   clearRoute: () => set({ route: null, length: null, time: null }),
 }));

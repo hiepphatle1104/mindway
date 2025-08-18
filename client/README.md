@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# MindWay Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based client application for the MindWay project with real-time WebSocket support for route updates.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time route calculation via WebSocket
+- Automatic route updates when server broadcasts changes
+- Fallback to REST API when WebSocket is unavailable
+- Modern UI with Radix UI components
 
-## Expanding the ESLint configuration
+## WebSocket Integration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application now supports real-time route updates through WebSocket connections:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Route Request Flow
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **User clicks "Get Directions"** - Establishes WebSocket connection
+2. **Route request sent** - Client sends route coordinates via WebSocket
+3. **Server processes request** - Calculates route and sends response
+4. **Route displayed** - Client receives route data and updates UI
+5. **Broadcast sent** - Server broadcasts update to all connected clients
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### WebSocket Message Types
+
+- `route_request`: Client requests a new route
+- `route_response`: Server responds with calculated route data
+- `route_update`: Server broadcasts route updates to all clients
+
+### Fallback Behavior
+
+If WebSocket connection fails, the application automatically falls back to REST API calls for route calculation.
+
+## Development
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Testing WebSocket Broadcast
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Use the test endpoint to simulate route updates:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+curl -X POST http://localhost:8000/test-route-update
 ```
+
+This will broadcast a test message to all connected WebSocket clients.
