@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+* {
+  @apply box-border m-0;
+}
+
+#root {
+  @apply h-screen;
+}
+
+.leaflet-container {
+  @apply h-screen;
+}
